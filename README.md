@@ -28,7 +28,8 @@ The system follows a standard **RAG pipeline**:
 - Evaluates outputs on:
   - Syntax validity
   - Task completion
-  - Robustness to noisy or underspecified prompts
+  - Robustness to noisy or underspecified prompts  
+  using GPT 3.5
 
 ---
 
