@@ -41,7 +41,7 @@ The system follows a standard **RAG pipeline**:
 
 *Canonical retrieval performance across ranking metrics (NDCG, MRR, Recall, Precision).*
 
-The combined retrieval dataset merges all sources and trades slightly lower raw metric scores for improved **generalizability**, reflecting the diversity of real-world EEG queries and documentation styles.
+The combined retrieval dataset merges all sources and trades slightly lower raw metric scores for improved generalizability, reflecting the diversity of real-world EEG queries and documentation styles.
 
 ---
 
@@ -51,10 +51,10 @@ The combined retrieval dataset merges all sources and trades slightly lower raw 
   <img src="https://github.com/user-attachments/assets/6b8841e5-bc68-4c73-a238-8b2734619234" width="600"/>
 </p>
 
-Generator outputs are optionally refined using **GPT-4o** as a post-processing step.  
+Generator outputs are refined using **GPT-4o** as a post-processing step.  
 Given a minimally processed EEG signal description, GPT-4o corrects and stabilizes the generated script before execution.
+The resulting preprocessing pipeline was applied to a 3-second EEG segment from a real recording (Prof. Yisong and Geeling's decoding project, D10S2), demonstrating the feasibility of *one-shot RAG-based preprocessing as seen in the image above. 
 
-The resulting preprocessing pipeline was applied to a 3-second EEG segment from a real recording, demonstrating the feasibility of **one-shot RAG-based preprocessing**.
 
 ---
 ## Demo Notebooks
